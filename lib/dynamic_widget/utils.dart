@@ -272,8 +272,8 @@ Map<String, dynamic>? exportTextStyle(TextStyle? textStyle) {
   };
 }
 
-Alignment? parseAlignment(String? alignmentString) {
-  Alignment? alignment;
+Alignment parseAlignment(String? alignmentString) {
+  Alignment alignment = Alignment.center;
   switch (alignmentString) {
     case 'topLeft':
       alignment = Alignment.topLeft;
